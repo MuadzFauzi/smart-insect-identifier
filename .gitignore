@@ -1,0 +1,31 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+
+# Python / Virtual Environment
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment Variables (Kunci API Rahasia)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sistem Operasi
+.DS_Store
+Thumbs.db
+
+# Blokir file bobot model di folder artifacts
+backend/artifacts/*.pt
+backend/artifacts/*.pth

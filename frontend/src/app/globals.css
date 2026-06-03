@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+/* ── CSS Variables ─────────────────────────────────────────────────────── */
+:root {
+  --bg-primary:      #fdfaf4;
+  --bg-secondary:    #f5f0e6;
+  --bg-card:         #ffffff;
+  --bg-glass:        rgba(255, 255, 255, 0.72);
+  --border-color:    rgba(180, 160, 120, 0.3);
+  --text-primary:    #1a1a14;
+  --text-secondary:  #555548;
+  --text-muted:      #8a8a78;
+  --accent-green:    #2d7d35;
+  --accent-amber:    #b8882e;
+  --accent-glow:     rgba(45, 125, 53, 0.15);
+  --shadow-sm:       0 1px 3px rgba(0,0,0,0.07);
+  --shadow-md:       0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg:       0 12px 40px rgba(0,0,0,0.10);
+  --noise-opacity:   0.025;
+}
+ 
+.dark {
+  --bg-primary:      #0e0e0a;
+  --bg-secondary:    #14140f;
+  --bg-card:         #1a1a14;
+  --bg-glass:        rgba(26, 26, 20, 0.85);
+  --border-color:    rgba(255, 255, 255, 0.08);
+  --text-primary:    #f0ede4;
+  --text-secondary:  #b0ad9e;
+  --text-muted:      #6a6a58;
+  --accent-green:    #4a9d52;
+  --accent-amber:    #d4a853;
+  --accent-glow:     rgba(74, 157, 82, 0.12);
+  --shadow-sm:       0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:       0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg:       0 12px 40px rgba(0,0,0,0.5);
+  --noise-opacity:   0.04;
+}
+ 
+/* ── Base ──────────────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+ 
+/* ── Noise Texture Overlay ─────────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: var(--noise-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}
+ 
+/* ── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-green); }
+ 
+/* ── Utilities ──────────────────────────────────────────────────────────── */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+ 
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+ 
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+ 
+/* ── Prose / Markdown ──────────────────────────────────────────────────── */
+.prose-insect h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+ 
+.prose-insect h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-amber);
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+ 
+.prose-insect p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+ 
+.prose-insect ul, .prose-insect ol {
+  padding-left: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+ 
+.prose-insect li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.25rem;
+}
+ 
+.prose-insect strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+ 
+.prose-insect em {
+  color: var(--text-muted);
+  font-style: italic;
+}
+ 
+.prose-insect hr {
+  border-color: var(--border-color);
+  margin: 1.5rem 0;
+}
+ 
+.prose-insect code {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  background: var(--bg-secondary);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  color: var(--accent-amber);
+}
+
+.prose-insect table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.prose-insect th, .prose-insect td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.prose-insect th {
+  background: var(--bg-secondary);
+  color: var(--accent-green);
+  font-family: 'Playfair Display', serif;
+}
+ 
+/* ── Drop Zone ──────────────────────────────────────────────────────────── */
+.drop-zone-active {
+  border-color: var(--accent-green) !important;
+  box-shadow: 0 0 0 3px var(--accent-glow), var(--shadow-lg);
+  transform: scale(1.01);
+}
+ 
+/* ── Animations ─────────────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+ 
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--bg-secondary) 25%,
+    var(--bg-card) 50%,
+    var(--bg-secondary) 75%
+  );
+  background-size: 200% auto;
+  animation: shimmer 1.4s linear infinite;
+}
+ 
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+ 
+.float { animation: float 4s ease-in-out infinite; }
+ 
+@keyframes scanLine {
+  0%   { top: 0; opacity: 1; }
+  90%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}

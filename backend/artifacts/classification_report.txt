@@ -1,0 +1,126 @@
+Test Accuracy: 0.8002
+
+                                 precision    recall  f1-score   support
+
+                  adristyrannus     0.6944    0.7812    0.7353        32
+       aleurocanthus spiniferus     0.9077    0.8551    0.8806        69
+              alfalfa plant bug     0.4118    0.6269    0.4970        67
+           alfalfa seed chalcid     0.4545    0.2632    0.3333        19
+                 alfalfa weevil     0.7037    0.7170    0.7103        53
+                    ampelophaga     0.7253    0.8571    0.7857        77
+                            ant     0.9043    0.9793    0.9403       193
+                         aphids     0.9312    0.6984    0.7982       620
+               apolygus lucorum     0.3611    0.6667    0.4685        39
+                       armyworm     0.8000    0.4533    0.5787       353
+             asiatic rice borer     0.5588    0.5377    0.5481       106
+           bactrocera tsuneonis     0.6250    0.5556    0.5882        18
+                            bee     0.9669    0.9966    0.9815       293
+                       beet fly     0.3571    0.4545    0.4000        11
+                         beetle     0.9386    0.8327    0.8825       257
+                  black cutworm     0.5057    0.5116    0.5087        86
+                 blister beetle     0.7444    0.7016    0.7224       191
+                       bollworm     0.7500    0.6000    0.6667         5
+   brevipoalpus lewisi McGregor     0.8750    0.7778    0.8235         9
+             brown plant hopper     0.4835    0.5238    0.5029        84
+                      butterfly     0.9452    0.9928    0.9684       139
+                   catterpillar     0.9091    0.9524    0.9302       105
+          cerodonta denticornis     0.4737    0.6000    0.5294        15
+             ceroplastes rubens     0.8667    0.9630    0.9123        27
+                         chayon     1.0000    0.9245    0.9608        53
+           chlumetia transversa     0.4259    0.7419    0.5412        31
+          chrysomphalus aonidum     0.6800    0.7391    0.7083        23
+              cicadella viridis     0.6201    0.8605    0.7208       129
+                   cicadellidae     0.9370    0.7770    0.8495       574
+                     corn borer     0.6632    0.7485    0.7033       171
+         dacus dorsalis(Hendel)     0.8140    0.7778    0.7955        45
+                   dasineura sp     0.5303    0.6863    0.5983        51
+     deporaus marginatus Pascoe     0.5385    0.6667    0.5957        21
+                      dragonfly     0.9857    1.0000    0.9928        69
+                      earthworm     0.9310    1.0000    0.9643        81
+                         earwig     0.9386    0.9727    0.9554       110
+          erythroneura apicalis     0.5714    1.0000    0.7273         8
+                  fall armyworm     0.9337    0.9441    0.9389       179
+                   flax budworm     0.4159    0.4352    0.4253       108
+                    flea beetle     0.6900    0.8625    0.7667        80
+                            fly     0.9371    0.9011    0.9188       182
+          grain spreader thrips     0.5217    0.6667    0.5854        18
+                    grasshopper     0.9740    0.8906    0.9305       631
+                           grub     0.8125    0.9070    0.8571        86
+        icerya purchasi Maskell     0.9206    0.7945    0.8529        73
+                       kolorado     0.9091    1.0000    0.9524        10
+                        ladybug     0.9606    1.0000    0.9799       122
+                  large cutworm     0.2576    0.3400    0.2931        50
+        lawana imitata Melichar     0.6757    0.8475    0.7519        59
+                    leaf beetle     0.9807    0.9824    0.9815       568
+          legume blister beetle     0.7846    0.7183    0.7500       142
+                    limacodidae     0.9612    0.8857    0.9219       140
+                    locustoidea     0.6598    0.9143    0.7665       140
+         longlegged spider mite     0.4412    0.6000    0.5085        25
+             lycorma delicatula     0.9552    0.8023    0.8721       531
+                   lytta polita     0.5195    0.6061    0.5594        66
+     mango flat beak leafhopper     0.4706    0.8000    0.5926        10
+                    meadow moth     0.7143    0.7407    0.7273        27
+                        miridae     0.8966    0.6817    0.7746       509
+                          mites     0.8000    0.8000    0.8000         5
+                   mole cricket     0.9593    0.9940    0.9763       166
+                       mosquito     0.9524    1.0000    0.9756        60
+                           moth     0.9370    0.9835    0.9597       121
+           nipaecoccus vastalor     0.8571    0.5455    0.6667        11
+              odontothrips loti     0.6000    0.7895    0.6818        19
+            oides decempunctata     0.9286    0.8966    0.9123        29
+              paddy stem maggot     0.4706    0.5926    0.5246        27
+       panonchus citri McGregor     0.7561    0.7949    0.7750        39
+                 papilio xuthus     0.9149    0.9348    0.9247        46
+             parathrene regalis     0.6875    0.7857    0.7333        14
+      parlatoria zizyphus Lucus     0.8571    0.7500    0.8000         8
+                    peach borer     0.8636    0.8143    0.8382        70
+               penthaleus major     0.7600    0.7917    0.7755        24
+phyllocnistis citrella Stainton     0.8750    0.8537    0.8642        41
+ phyllocoptes oleiverus ashmead     0.6667    0.8889    0.7619        18
+                 pieris canidia     0.9375    0.9375    0.9375        48
+     polyphagotars onemus latus     0.4444    0.4444    0.4444         9
+            potosiabre vitarsis     0.8947    0.8947    0.8947        57
+                prodenia litura     0.5828    0.7252    0.6463       131
+  pseudococcus comstocki Kuwana     0.6923    0.8438    0.7606        32
+                     red spider     0.6296    0.6296    0.6296        54
+     rhytidodera bowrinii white     0.7857    0.7857    0.7857        56
+                   rice Stemfly     0.5814    0.6579    0.6173        38
+                rice gall midge     0.6724    0.7500    0.7091        52
+          rice leaf caterpillar     0.5246    0.6400    0.5766        50
+               rice leaf roller     0.7345    0.7411    0.7378       112
+                rice leafhopper     0.3457    0.6829    0.4590        41
+                rice shell pest     0.5098    0.6190    0.5591        42
+              rice water weevil     0.7901    0.7356    0.7619        87
+      salurnis marginella Guerr     0.7308    0.7600    0.7451        50
+                         sawfly     0.0000    0.0000    0.0000         5
+     scirtothrips dorsalis Hood     0.7703    0.6951    0.7308        82
+  sericaorient alismots chulsky     0.8889    0.8000    0.8421        20
+                           slug     0.9792    1.0000    0.9895        94
+       small brown plant hopper     0.4384    0.5714    0.4961        56
+                          snail     0.9919    1.0000    0.9959       122
+                         spider     0.9690    0.9921    0.9804       126
+                     stem_borer     0.3333    0.2000    0.2500         5
+          sternochetus frigidus     0.6809    0.6809    0.6809        47
+            tarnished plant bug     0.4444    0.7317    0.5530        82
+   therioaphis maculata Buckton     0.2273    0.3846    0.2857        26
+                         thrips     0.3545    0.4382    0.3920        89
+             toxoptera aurantii     0.5333    0.6667    0.5926        24
+           toxoptera citricidus     0.5000    0.7000    0.5833        20
+      trialeurodes vaporariorum     0.6786    0.8143    0.7403        70
+             unaspis yanonensis     0.6809    0.7442    0.7111        43
+              viteus vitifoliae     0.6327    0.8611    0.7294        36
+                           wasp     0.9614    1.0000    0.9803       199
+                         weevil     0.8658    0.9021    0.8836       143
+            wheat blossom midge     0.8167    1.0000    0.8991        49
+             wheat phloeothrips     0.5610    0.7667    0.6479        30
+                   wheat sawfly     0.6829    0.8000    0.7368        35
+      white backed plant hopper     0.6351    0.5222    0.5732        90
+            white margined moth     0.3636    0.7500    0.4898        16
+                      wire worm     0.8506    0.8222    0.8362        90
+                    xylotrechus     0.8226    0.8870    0.8536       115
+                 yellow cutworm     0.2931    0.3469    0.3178        49
+              yellow rice borer     0.6939    0.6667    0.6800        51
+
+                       accuracy                         0.8002     11361
+                      macro avg     0.7061    0.7536    0.7220     11361
+                   weighted avg     0.8225    0.8002    0.8045     11361
